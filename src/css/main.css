@@ -96,7 +96,7 @@ body {
 #footer a {
     font-weight: 300;
     color : white;
-    opacity : 50%;
+    opacity : 100%;
 }
 #footer a:hover {
     border-bottom: 2x solid #ffc107;
