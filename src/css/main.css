@@ -46,19 +46,20 @@ body {
     font-weight: 800;
 }
 #about-desc {
-    font-weight : 400;
+    font-weight : 300;
 }
 #about-desc h2{
-    color : black;
-    opacity : 50%;
+    color : #dd3d31;
+    font-weight: 300;
+    opacity : 100%;
 }
 #about-desc h2:hover{
-    background-color: black;
-    border-left: 10px solid #dd3d31;
-    color : #dd3d31;
+    /* background-color: black;
+    border-left: 10px solid #dd3d31; */
+    color : black;
     opacity : 100%;
     font-weight: 300;
-    padding-left : 20px;
+    /*padding-left : 20px;*/
 }
 .tool-mode {
     color : #dd3d31;
@@ -83,9 +84,6 @@ body {
     color : #ffc107;
     color: #dd3d31;*/
     color : white;
-    /*position : fixed;
-    bottom : 0;*/
-    
 }
 
 #footer h5 {
@@ -94,9 +92,10 @@ body {
     opacity : 50%;
 }
 #footer a {
+    font-size : 24px;
     font-weight: 300;
     color : white;
-    opacity : 100%;
+    opacity : 50%;
 }
 #footer a:hover {
     border-bottom: 2x solid #ffc107;
@@ -104,9 +103,8 @@ body {
     color : #dd3d31;
     opacity : 100%;
 }
-#footer-logo img{
-    width : 50px;
-    height : 50px;
+#footer-links{
+    font-size : 24px;
 }    
 #year {
     opacity : 50%;
