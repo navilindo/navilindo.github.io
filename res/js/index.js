@@ -17,7 +17,7 @@ function setVisible(selector, visible) {
 }
 
 onReady(function(){
-  setVisible('.final', true);
+  setVisible('#home', true);
   setVisible('#loading', false);
 });
 
@@ -27,15 +27,13 @@ $( document ).click(function() {
 });
 
 function showHome(){
-  $(document).ready(function(){
-    $(#home).show();
-  }
+    setVisible('#home', true);
+    setVisible('#loading', false);
 }
-{/* function showAbout() {
-    $(#aboutBtn).click(function(){
-        $(#about-me).toggle( "slide" );
-    });    
-} */}
+
+function showAbout() {   
+  setVisible('#about-me', true);
+}
 // function showAbout(){ 
 // $(document).ready(function(){
 //   $(".AboutBtn").click(function(){
