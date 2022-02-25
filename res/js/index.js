@@ -7,5 +7,5 @@ function showAbout() {
     $(#aboutBtn).click(function(){
         $(#about-me).toggle( "slide" );
     });    
-}   
+}  
 </script>
