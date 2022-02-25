@@ -1,0 +1,179 @@
+body {
+    background-color: #000000;
+    font-weight : 400;
+    font-size: 16px;
+}
+
+.loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("/res/img/logo/navi-icon-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.final {
+    display: none;
+}
+
+.logo01{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+.logo02 {
+    height : auto;
+   
+}
+#home{
+    height:100vh;
+    /* width : 100%; */
+    /*background-color: #000000;
+    background-color: #8bc53e;*/
+    background: #8BC53E;
+    background: -moz-linear-gradient(-45deg, #8BC53E 0%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #8BC53E 0%, #000000 100%);
+    background: linear-gradient(135deg, #8BC53E 0%, #000000 100%);
+    /*background: url("/src/img/res/fib-opt.jpg");*/
+    background-blend-mode: screen;
+    /*background-image : url('/basekumi/src/img/res/map-image.png');*/
+}
+#jumbo-01 a{
+    outline-width: 1px;
+    color : white;
+    text-decoration: none;
+    outline: #666666;
+}
+#jumbo-01 #p{
+    color : white;
+    font-size: large;
+}
+#jumbo-01 h1{
+    color : white;
+    font-size: 54px;
+    font-weight: 200;
+}
+
+#about-me {
+    height:100vh;
+    background-color: #5e3a79;
+}
+
+#contact-me {
+    height:100vh;
+    background-color: darkorange;
+}
+.slogan-01{
+    font-weight: 400;
+    font-size: x-large;
+    color : white;
+}
+.slogan-02{
+    font-weight: 300;
+    color : white;
+    font-size: x-large;
+}
+#partner-01 {
+    height:auto;
+    font: 100px;
+    background-color: #666666;
+}
+footer {
+    background-color:#000000;
+    opacity: 100%;
+}
+#footer-logo {
+    height: 70px;
+}
+.left-part a i{
+    color : white;
+}
+.right-part h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.right-part a{
+    font-size: 16px;
+    font-weight: 300;
+    color : #8BC53E;
+    text-decoration: none;
+}
+.social-icons a{
+    font-size: 16px;
+    font-weight: 200;
+    color : white;
+    text-decoration: none;
+}
+.right-part a:hover{
+    color : white;
+    opacity : 100%;
+    text-decoration-color: white;
+    font-weight: 400;
+}
+.right-part #addr{
+    font-size: 14px;
+    font-weight: 300;
+    color : white;
+}
+#contact-form {
+    background-color: #0054d2;
+    opacity: 100%;
+}
+#contact-form h3{
+    color : #ffffff;
+}
+#contact-send {
+    background-color: #000000;
+    color :white;
+}
+#contact-info {
+    background-color: #000000;
+    opacity : 100%;
+    color : white;
+    
+}
+#contact-info #info{
+    font-weight: 300;
+    opacity : 100%;
+}
+#main-contact .cont{
+    background-image: url("/src/img/res/hero.png");
+    background-size: cover;
+}
+#row-01 #row-02{
+    /*background: url("/src/img/res/fib-opt.jpg");*/
+    background-size: cover;
+    height : 300px;
+    /* background-color: #666666; */
+    background-blend-mode: screen;
+    opacity : 100%;
+    color : #5e3a79;
+}
+#cat {
+    background-color: #8BC53E;
+    fill-opacity: 0%;
+    color: #ffffff;
+}
+.circle-icon {
+    background : #000000;
+    border : #8BC53E;
+    width : 50px;
+    height : 50px;
+    border-radius: 75%;
+    text-align: center;
+    color: #8BC53E;
+    
+
+}
+.circle-icon:hover {
+    color : #8BC53E;
+    opacity: 50%;
+}
