@@ -1,7 +1,26 @@
 body {
+    background-color: #000000;
     font-weight : 400;
     font-size: 16px;
 }
+
+.loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("/res/img/logo/navi-icon-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.final {
+    display: none;
+}
+
 .logo01{
     height: 50px;
     display: flex;
