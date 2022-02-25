@@ -16,7 +16,7 @@ function setVisible(selector, visible) {
   document.querySelector(selector).style.display = visible ? 'block' : 'none';
 }
 
-onReady(function() {
+onReady(function(){
   setVisible('.final', true);
   setVisible('#loading', false);
 });
@@ -26,6 +26,11 @@ $( document ).click(function() {
   $( "#toggle" ).toggle( "slide" );
 });
 
+function showHome(){
+  $(document).ready(function(){
+    $(#home).show();
+  }
+}
 {/* function showAbout() {
     $(#aboutBtn).click(function(){
         $(#about-me).toggle( "slide" );
