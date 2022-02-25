@@ -37,21 +37,36 @@
        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+
+  <main>
+    <div class="container" id="content">
+      <div class="loading">
+
+      </div>
+      <div class="final">
+
+      </div>
+    </div>
+  </main>
+
     <div class="whole-page" id="home">
  
         <div class="container">
             
-            <a href="#" onclick="showHome()">
-                <i class="bi bi-hexagon page-links"></i>
-            </a>
-            <a href="#about-me" onclick="showAbout()" id="aboutBtn">
-                <i class="bi bi-person page-links"></i>
-            </a>
-            <a href="#contact-me" onclick="showContact()">
-                <i class="bi bi-chat-square page-links"></i>
-            </a>
-            
             <div class="forty" style="height:30vh"></div>
+            
+            <div class="navLinks">
+                <a href="#" onclick="showHome()">
+                    <i class="bi bi-hexagon page-links"></i>
+                </a>
+                <a href="#about-me" onclick="showAbout()" id="aboutBtn">
+                    <i class="bi bi-person page-links"></i>
+                </a>
+                <a href="#contact-me" onclick="showContact()">
+                    <i class="bi bi-chat-square page-links"></i>
+                </a>
+            </div>
+            
             <div class="text-sm-center text-xm-center logo-wm lt-auto lm-auto mt-auto mb-auto pt-5">
               <img src="res/img/logo/navi-logo-white.png" class="logo02">
             </div>
