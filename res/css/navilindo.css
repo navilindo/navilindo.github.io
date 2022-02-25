@@ -48,6 +48,7 @@ body {
 }
 
 #contact-me {
+    height:100vh;
     background-color: darkorange;
 }
 .slogan-01{
