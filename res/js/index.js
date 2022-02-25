@@ -1,7 +1,7 @@
 
-function whileLoading(){
+// function whileLoading(){
 
-}
+// }
 
 function onReady(callback) {
   var intervalId = window.setInterval(function() {
@@ -16,8 +16,8 @@ function setVisible(selector, visible) {
   document.querySelector(selector).style.display = visible ? 'block' : 'none';
 }
 
-onReady(function() {
-  setVisible('.final', true);
+onReady(function(){
+  setVisible('#home', true);
   setVisible('#loading', false);
 });
 
@@ -26,14 +26,17 @@ $( document ).click(function() {
   $( "#toggle" ).toggle( "slide" );
 });
 
-{/* function showAbout() {
-    $(#aboutBtn).click(function(){
-        $(#about-me).toggle( "slide" );
-    });    
-} */}
-function showAbout(){ 
-$(document).ready(function(){
-  $(".AboutBtn").click(function(){
-    $(#about-me).show();
-  });
+function showHome(){
+    setVisible('#home', true);
+    setVisible('#loading', false);
 }
+
+function showAbout() {   
+  setVisible('#about-me', true);
+}
+// function showAbout(){ 
+// $(document).ready(function(){
+//   $(".AboutBtn").click(function(){
+//     $(#about-me).show();
+//   });
+// }
