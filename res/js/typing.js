@@ -1,4 +1,4 @@
-var p = document.getElementById('navi-type');
+var p = document.getElementById('loading');
 p.innerHTML = '';
 var n = 0;
 var str = ' \"There is no one who is mindful of what he says except that you will see <br> the good of it in the rest of his actions.\" <br> <b><u>Yūnus b. ʿUbayd</u> </b> - Rahimahullaah ';
