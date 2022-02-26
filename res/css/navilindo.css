@@ -47,7 +47,9 @@ body {
 .menu-icons {
     font-size: 2rem;
 }
-
+.socialHandles {
+    font-size: 1.5rem;
+}
 .loading {
     display: block;
     position: absolute;
