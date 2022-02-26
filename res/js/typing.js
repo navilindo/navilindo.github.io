@@ -1,5 +1,5 @@
-function a(){
-$(window).load(function() {
+function type(){
+
 var p = document.getElementById('loading-text');
 p.innerHTML = '';
 var n = 0;
@@ -20,11 +20,16 @@ var typeTimer = setInterval(function() {
         p.innerHTML = " " + str
         n = 0;
       };
-    }, 500);
+    }, 1000);
   };
-}, 60)
-});
+}, 60);
+$(document).trigger('function_a_complete');
 }
+
+$(document).ready(function(){
+  type();
+});
+
 function showHome(){
   
     alert("hi 2");
