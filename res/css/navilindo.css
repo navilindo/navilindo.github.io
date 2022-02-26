@@ -28,11 +28,11 @@ body {
 }
 
 #icon-1:hover {
-    display: none;
+    
 }
 
 #icon-2 {
-    display: none;
+    display: block;
 }
 
 #icon-2:hover {
@@ -69,7 +69,7 @@ body {
 }
 
 .final {
-    display: none;
+    display: block;
 }
 
 .logo01{
@@ -114,13 +114,13 @@ body {
 }
 
 #about-me {
-    display: none;
+    display: block;
     height:100vh;
     background-color: #5e3a79;
 }
 
 #contact-me {
-    display: none;
+    display: block;
     height:100vh;
     background-color: darkorange;
 }
