@@ -1,7 +1,14 @@
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-weight : 400;
     font-size: 16px;
+
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+.section-title {
+    color:#8BC53E;
+    font-weight: 600;
 }
 
 .floatingMenu {
@@ -17,8 +24,16 @@ body {
     top: 50%;
     /* left: 50%; */
     /* bring your own prefixes */
-    transform: translate(-0%, -50%); /* it was -50% */
+    transform: translate(0%, -50%); /* it was -50% now its 0 */
 }
+
+.line-under-title {
+    background-color: #8BC53E;
+    height: 3px;
+    width: 150px;
+    align-items: center;
+}
+
 
 .floatingMenu a{
 
@@ -149,7 +164,13 @@ body {
 #contact-me {
     display: block;
     height:100vh;
-    background-color: darkorange;
+    background-color: #ffffff;
+}
+
+.contact-content {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
 }
 .slogan-01{
     font-weight: 400;
