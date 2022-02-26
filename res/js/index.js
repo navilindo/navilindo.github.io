@@ -32,7 +32,7 @@ function showHome(){
 }
 
 function showAbout() {   
-  // $('#home').fadeOut("slow");
+  $('#home').hide("slow", function);
   setVisible('#about-me', true);
 }
 // function showAbout(){ 
