@@ -8,13 +8,19 @@ body {
     font-family: sans-serif;
     background:;
     color: #8BC53E;
-    padding: 5px;;
+    padding: 5px;
     width: 130px;
     z-index: 100;
     position: fixed;
     bottom: 0px;
     right: 0px;
 }
+
+.floatingMenu a{
+    display: block;
+    color : #8BC53E;
+}
+
 
 .loading {
     display: block;
