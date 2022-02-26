@@ -1,7 +1,51 @@
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-weight : 400;
     font-size: 16px;
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+.section-title {
+    color:#8BC53E;
+    font-weight: 600;
+}
+
+.floatingMenu {
+    
+    color: #8BC53E;
+    /* padding: 5px; */
+    width: auto;
+    z-index: 100;
+    position: fixed;
+    border-right: #8BC53E 1px dashed;
+
+    /* center vertically */
+    top: 50%;
+    /* left: 50%; */
+    /* bring your own prefixes */
+    transform: translate(0%, -50%); /* it was -50% now its 0 */
+}
+
+.line-under-title {
+    background-color: #8BC53E;
+    height: 5px;
+    width: 150px;
+    align-items: center;
+}
+
+.sendBtn  {
+    background-color: #8BC53E;
+    color : #ffffff;
+}
+.floatingMenu a{
+
+    float: center;
+    display: block;
+    color : #8BC53E;
+}
+
+.menu-icons {
+    font-size: 2rem;
 }
 
 .loading {
@@ -122,7 +166,13 @@ body {
 #contact-me {
     display: block;
     height:100vh;
-    background-color: darkorange;
+    background-color: #ffffff;
+}
+
+.contact-content {
+    position: relative;
+    top: 25%;
+    bottom: 25%;
 }
 .slogan-01{
     font-weight: 400;
