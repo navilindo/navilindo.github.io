@@ -23,9 +23,11 @@ body {
 }
 
 #loading-text {
+    width: 60vw;
+    height: 40vh;
     color : green;
     font-family:'Courier New', Courier, monospace !important;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .final {
