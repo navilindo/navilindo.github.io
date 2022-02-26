@@ -48,8 +48,16 @@ body {
     font-size: 2rem;
 }
 .socialHandles {
+    text-decoration: none;
     font-size: 1.5rem;
+    color: #8BC53E;
 }
+
+.socialHandles:hover {
+    color: #000000;
+    opacity : 50%;
+}
+
 .loading {
     display: block;
     position: absolute;
