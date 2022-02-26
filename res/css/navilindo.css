@@ -7,15 +7,21 @@ body {
 .floatingMenu {
     
     color: #8BC53E;
-    padding: 5px;
+    /* padding: 5px; */
     width: auto;
     z-index: 100;
     position: fixed;
     border-right: #8BC53E 1px dashed;
+
+    /* center vertically */
+    top: 50%;
+    /* left: 50%; */
+    /* bring your own prefixes */
+    transform: translate(-0%, -50%); /* it was -50% */
 }
 
 .floatingMenu a{
-    
+
     float: center;
     display: block;
     color : #8BC53E;
