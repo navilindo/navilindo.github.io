@@ -5,22 +5,25 @@ body {
 }
 
 .floatingMenu {
-    font-family: sans-serif;
-    background:;
+    
     color: #8BC53E;
     padding: 5px;
-    width: 130px;
+    width: auto;
     z-index: 100;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    border-right: #8BC53E 1px dashed;
 }
 
 .floatingMenu a{
+    
+    float: center;
     display: block;
     color : #8BC53E;
 }
 
+.menu-icons {
+    font-size: 2rem;
+}
 
 .loading {
     display: block;
