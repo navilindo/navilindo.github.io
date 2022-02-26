@@ -31,6 +31,10 @@ function showHome(){
     setVisible('#loading', false);
 }
 
+function goHome(){
+  setVisible('#home', true);
+  setVisible('#loading', false);
+}
 function showAbout() {   
   $('#home').hide("slow", function);
   setVisible('#about-me', true);

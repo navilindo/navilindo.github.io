@@ -22,8 +22,9 @@ body {
     background-position: center;
 }
 
-#icon-holder {
-
+#icon-holder > a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #icon-1:hover {
