@@ -2,7 +2,6 @@ body {
     background-color: #ffffff;
     font-weight : 400;
     font-size: 16px;
-
     font-family: "Noto Sans", sans-serif !important;
 }
 
@@ -29,12 +28,15 @@ body {
 
 .line-under-title {
     background-color: #8BC53E;
-    height: 3px;
+    height: 5px;
     width: 150px;
     align-items: center;
 }
 
-
+.sendBtn  {
+    background-color: #8BC53E;
+    color : #ffffff;
+}
 .floatingMenu a{
 
     float: center;
