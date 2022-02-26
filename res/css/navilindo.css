@@ -22,16 +22,17 @@ body {
     background-position: center;
 }
 
-#icon-holder {
-
+#icon-holder > a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #icon-1:hover {
-    display: none;
+    
 }
 
 #icon-2 {
-    display: none;
+    display: block;
 }
 
 #icon-2:hover {
@@ -68,7 +69,7 @@ body {
 }
 
 .final {
-    display: none;
+    display: block;
 }
 
 .logo01{
@@ -83,7 +84,7 @@ body {
    
 }
 #home{
-    display: none;
+    /* display: none; */
     height:100vh;
     /* width : 100%; */
     /*background-color: #000000;
@@ -113,13 +114,13 @@ body {
 }
 
 #about-me {
-    display: none;
+    display: block;
     height:100vh;
     background-color: #5e3a79;
 }
 
 #contact-me {
-    display: none;
+    display: block;
     height:100vh;
     background-color: darkorange;
 }
