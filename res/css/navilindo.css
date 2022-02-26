@@ -4,6 +4,18 @@ body {
     font-size: 16px;
 }
 
+.floatingMenu {
+    font-family: sans-serif;
+    background:;
+    color: #8BC53E;
+    padding: 5px;;
+    width: 130px;
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
 .loading {
     display: block;
     position: absolute;
