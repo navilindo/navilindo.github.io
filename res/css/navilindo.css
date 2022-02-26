@@ -34,7 +34,7 @@ body {
     display: none;
 }
 
-a > #icon-2:hover {
+#icon-2:hover {
     display: block;
     color: #8BC53E;
 }
