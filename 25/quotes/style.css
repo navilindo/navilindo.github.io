@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    font-family: "DM Sans", sans-serif !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.salmaan {
+    color: #f79205;
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+#quote-container {
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+#author {
+    font-size: 1.0rem;
+}
+  
+  #new-quote-button {
+    background-color: #3498db;
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #new-quote-button:hover {
+    background-color: #2980b9;
+    background-color: #f79205;
+  }
+  

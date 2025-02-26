@@ -1,0 +1,307 @@
+body {
+    background-color: #ffffff;
+    background-color: #000000;
+    /* color: #f8f8f8 !important; */
+    font-weight : 400;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif !important;
+}
+
+
+.section-title {
+    /* color:#8BC53E; */
+    color:#f79205;
+    color: #f79205 !important;
+    font-weight: 600;
+}
+
+.floatingMenu {
+    color: #8BC53E;
+    /* padding: 5px; */
+    width: auto;
+    z-index: 100;
+    position: fixed;
+    border-right: #8BC53E 1px dashed;
+
+    /* center vertically */
+    top: 50%;
+    /* left: 50%; */
+    /* bring your own prefixes */
+    transform: translate(0%, -50%); /* it was -50% now its 0 */
+}
+
+.line-under-title {
+    background-color: #f79205;
+    /* background-color: #f79205; */
+    height: 5px;
+    width: 150px;
+    align-items: center;
+}
+
+.sendBtn  {
+    background-color: #8BC53E;
+    background-color: #f79205;
+    background-color: #f79205;
+    color : #ffffff;
+}
+.floatingMenu a{
+
+    float: center;
+    display: block;
+    color : #8BC53E;
+}
+
+.menu-icons {
+    font-size: 2rem;
+}
+
+.pg-link{
+    color: white !important;
+    text-decoration: none;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.socialHandles {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #8BC53E;
+    color: black;
+}
+
+.socialHandles:hover {
+    color: #000000;
+    color: #f79205 !important;
+    opacity : 100%;
+}
+
+.loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-holder > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#icon-1:hover {
+    
+}
+
+#icon-2 {
+    display: block;
+}
+
+#icon-2:hover {
+    display: block;
+    color: #8BC53E;
+}
+
+
+#loading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#loading-text {
+    width: 50vw;
+    height: 50vh;
+    /* color : #8BC53E;
+    color: #f79205; */
+    color: #5c5c5c;
+    font-family: "Red Hat Display", sans-serif !important;
+    font-size: 2rem;
+}
+
+#load-home {
+    color: #f79205 !important;
+}
+.final {
+    display: block;
+}
+
+.logo01{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+.logo02 {
+    height : auto;
+}
+#home{
+    /* display: none; */
+    height:100vh;
+    /* width : 100%; */
+    /*background-color: #000000;
+    background-color: #8bc53e;*/
+    background: #000000;
+    /* background: -moz-linear-gradient(-45deg, #8BC53E 0%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #8BC53E 0%, #000000 100%);
+    background: linear-gradient(135deg, #8BC53E 0%, #000000 100%); */
+    /*background: url("/src/img/res/fib-opt.jpg");*/
+    background-blend-mode: screen;
+    /*background-image : url('/basekumi/src/img/res/map-image.png');*/
+}
+#jumbo-01 a{
+    outline-width: 1px;
+    color : white;
+    text-decoration: none;
+    outline: #666666;
+}
+#jumbo-01 #p{
+    color : white;
+    font-size: large;
+}
+#jumbo-01 h1{
+    color : white;
+    font-size: 54px;
+    font-weight: 200;
+}
+
+#about-me {
+    display: block;
+    height:100vh;
+    background-color: #5e3a79;
+}
+
+
+#pages {
+    display: block;
+    height:100vh;
+    background-color: #000;
+    color: #5c5c5c;
+}
+
+#contact-me {
+    display: block;
+    height:100vh;
+    background-color: #ffffff;
+}
+
+.contact-content {
+    position: relative;
+    top: 25%;
+    bottom: 25%;
+}
+.slogan-01{
+    font-weight: 400;
+    font-size: x-large;
+    color : white;
+}
+.slogan-02{
+    font-weight: 300;
+    color : white;
+    font-size: x-large;
+}
+#partner-01 {
+    height:auto;
+    font: 100px;
+    background-color: #666666;
+}
+footer {
+    background-color:#000000;
+    opacity: 100%;
+}
+#footer-logo {
+    height: 70px;
+}
+.left-part a i{
+    color : white;
+}
+.right-part h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.right-part a{
+    font-size: 16px;
+    font-weight: 300;
+    color : #8BC53E;
+    text-decoration: none;
+}
+.social-icons a{
+    font-size: 16px;
+    font-weight: 200;
+    color : white;
+    text-decoration: none;
+}
+.right-part a:hover{
+    color : white;
+    opacity : 100%;
+    text-decoration-color: white;
+    font-weight: 400;
+}
+.right-part #addr{
+    font-size: 14px;
+    font-weight: 300;
+    color : white;
+}
+#contact-form {
+    background-color: #0054d2;
+    opacity: 100%;
+}
+#contact-form h3{
+    color : #ffffff;
+}
+#contact-send {
+    background-color: #000000;
+    color :white;
+}
+#contact-info {
+    background-color: #000000;
+    opacity : 100%;
+    color : white;
+    
+}
+#contact-info #info{
+    font-weight: 300;
+    opacity : 100%;
+}
+#main-contact .cont{
+    background-image: url("/src/img/res/hero.png");
+    background-size: cover;
+}
+#row-01 #row-02{
+    /*background: url("/src/img/res/fib-opt.jpg");*/
+    background-size: cover;
+    height : 300px;
+    /* background-color: #666666; */
+    background-blend-mode: screen;
+    opacity : 100%;
+    color : #5e3a79;
+}
+#cat {
+    background-color: #8BC53E;
+    fill-opacity: 0%;
+    color: #ffffff;
+}
+.circle-icon {
+    background : #000000;
+    border : #8BC53E;
+    width : 50px;
+    height : 50px;
+    border-radius: 75%;
+    text-align: center;
+    color: #8BC53E;
+    
+
+}
+.circle-icon:hover {
+    color : #8BC53E;
+    opacity: 50%;
+}
