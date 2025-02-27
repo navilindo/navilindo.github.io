@@ -134,14 +134,16 @@
     <!-- </div> -->
     </main>
     <script>
-        window.onscroll = function() {
-            var navbar = document.querySelector('.navbar');
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                navbar.style.opacity = "0.8";
-            } else {
-                navbar.style.opacity = "1";
-            }
-        };
+        document.addEventListener("DOMContentLoaded", function() {
+            window.onscroll = function() {
+                var navbar = document.querySelector('.navbar');
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    navbar.style.opacity = "0.8";
+                } else {
+                    navbar.style.opacity = "1";
+                }
+            };
+        });
     </script>
     <script src="./quotes/script.js"></script>
 </body>
