@@ -104,3 +104,290 @@
     <script src="./quotes/script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Issa Hassan - Graphics Designer & Software Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #212529;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--secondary-color);
+            overflow-x: hidden;
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.05));
+            padding-top: 80px;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .expertise-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .expertise-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .expertise-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .btn-primary {
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            background-color: var(--primary-color);
+            border: none;
+        }
+        
+        .btn-outline-primary {
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--primary-color);
+            background-color: rgba(13, 110, 253, 0.1);
+            margin: 0 5px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 10px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .quote-box {
+            background-color: white;
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 10px 10px 0;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Hassan Issa Hassan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <img src="/api/placeholder/250/250" alt="Hassan Issa Hassan" class="profile-img">
+                        <h1 class="display-4 fw-bold mb-3">Hassan Issa Hassan</h1>
+                        <h2 class="h3 mb-4">Graphics Designer & Software Engineer</h2>
+                        <p class="lead mb-4">Where Technology Meets Creativity</p>
+                        <p class="mb-5">With over seven years of experience transforming ideas into digital reality, I bring a unique blend of technical expertise and creative vision to every project.</p>
+                        
+                        <div class="quote-box">
+                            <p class="fst-italic mb-0">"Combining the precision of code with the power of visual storytelling"</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center gap-3 mt-4">
+                            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                            <a href="about.html" class="btn btn-outline-primary">About Me</a>
+                        </div>
+                        
+                        <div class="social-icons mt-5">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">My Expertise</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="expertise-item text-center">
+                        <div class="expertise-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="h4">Software Development</h3>
+                        <p>Systems Analysis | Web Development | Machine Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="expertise-item text-center">
+                        <div class="expertise-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="h4">Graphic Design</h3>
+                        <p>Brand Identity | Video Production | UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="expertise-item text-center">
+                        <div class="expertise-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="h4">Social Media</h3>
+                        <p>Content Strategy | Analytics | Campaign Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Role Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="mb-4">Currently</h3>
+            <p class="lead mb-3">IT Support & Computer Studies Teacher at Al Huda Islamic Center, Tanzania</p>
+            <p>Freelance Software Engineer & Graphics Designer</p>
+            <p class="mt-4 fst-italic">Available for select freelance projects and consulting opportunities</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links mb-3">
+                <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2025 Hassan Issa Hassan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
