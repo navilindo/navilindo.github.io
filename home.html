@@ -37,6 +37,25 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.25); position: sticky; top: 0; z-index: 1000;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navilindo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio" style="color: #000;">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dev" style="color: #000;">Dev</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <main>
         <!-- <div class="container"> -->
         <section>
@@ -114,6 +133,16 @@
 
     <!-- </div> -->
     </main>
+    <script>
+        window.onscroll = function() {
+            var navbar = document.querySelector('.navbar');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.style.opacity = "0.8";
+            } else {
+                navbar.style.opacity = "1";
+            }
+        };
+    </script>
     <script src="./quotes/script.js"></script>
 </body>
 </html>
