@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Hassan Issa Hassan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #212529;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--secondary-color);
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.05));
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .left-title:after {
+            margin: 0;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            margin-left: 20px;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -54px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 3px solid white;
+        }
+        
+        .timeline-date {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--primary-color);
+            background-color: rgba(13, 110, 253, 0.1);
+            margin: 0 5px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 10px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .quote-box {
+            background-color: white;
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 10px 10px 0;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .lang-card {
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .lang-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .lang-level {
+            height: 6px;
+            border-radius: 3px;
+            background-color: #e9ecef;
+            margin-bottom: 10px;
+        }
+        
+        .lang-level-fill {
+            height: 100%;
+            border-radius: 3px;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Hassan Issa Hassan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About Me</h1>
+            <p class="lead">Learn more about my professional journey and philosophy</p>
+        </div>
+    </header>
+
+    <!-- Professional Journey Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Hassan in a professional setting" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title left-title">Professional Journey</h2>
+                    <p>My path in technology and design began in the broadcast rooms of Africa TV, where I discovered the power of visual communication while managing playout systems. This early experience ignited my passion for the intersection of technology and creative expression.</p>
+                    <p>After completing my BSc in Information Technology from the International University of Africa in Sudan, I expanded my expertise across multiple domains—from classroom teaching to software development, from graphics design to systems analysis.</p>
+                    <p>What sets my approach apart is the cross-disciplinary perspective I bring to every project. My experience in broadcast media informs my design sensibilities, while my technical background ensures I create solutions that are not just visually compelling but also functionally robust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Professional Philosophy</h2>
+            <div class="text-center mb-5">
+                <p class="lead">I believe in the power of technology to educate, connect, and transform. This belief has guided my work across educational institutions, media organizations, and technology companies in East Africa.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-code-branch fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Technical Excellence</h3>
+                            <p>Writing clean code and creating polished designs that meet the highest standards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-globe-africa fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Cultural Awareness</h3>
+                            <p>Leveraging my multilingual abilities to create inclusive digital experiences</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-brain fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Continuous Learning</h3>
+                            <p>Staying at the forefront of technological and design trends through ongoing education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Educational Background</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2014-2018</div>
+                            <h3 class="timeline-title">BSc in Information Technology</h3>
+                            <p class="mb-1">International University of Africa, Khartoum, Sudan</p>
+                            <p class="fst-italic">Focus areas: Software Development, Systems Analysis, Data Structures</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2013-2014</div>
+                            <h3 class="timeline-title">Certificate in Arabic Language for Non-Native Speakers</h3>
+                            <p class="mb-1">The Arabic Language Institute at International University of Africa, Sudan</p>
+                            <p class="fst-italic">Achieved fluency in Modern Standard Arabic and Sudanese dialect</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2007-2010</div>
+                            <h3 class="timeline-title">Secondary Education</h3>
+                            <p class="mb-1">Mzumbe Secondary School, Morogoro, Tanzania</p>
+                            <p class="fst-italic">Focus: Mathematics, English, Computer Studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Professional Timeline</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024-Present</div>
+                            <h3 class="timeline-title">Al Huda Islamic Center</h3>
+                            <p>Computer Studies Teacher & IT Support</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023-2024</div>
+                            <h3 class="timeline-title">Africa TV Group</h3>
+                            <p>Head of IT Support & Graphics Design (Africa Academy)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022-2023</div>
+                            <h3 class="timeline-title">Cambridge International Schools</h3>
+                            <p>ICT Teacher</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2018-2023</div>
+                            <h3 class="timeline-title">International University of Africa</h3>
+                            <p>Tutorial Assistant</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019-2024</div>
+                            <h3 class="timeline-title">Alpha Tech Africa</h3>
+                            <p>Software Engineer (part-time)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021-Present</div>
+                            <h3 class="timeline-title">Botnet Group Limited</h3>
+                            <p>Graphics Designer & Systems Analyst (remote)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016-2020</div>
+                            <h3 class="timeline-title">Africa TV Group</h3>
+                            <p>Various roles including Social Media Manager and Broadcast Operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Skills Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Language Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="lang-card">
+                        <div class="lang-name">Swahili (Native)</div>
+                        <div class="lang-level">
+                            <div class="lang-level-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-name">English (Professional proficiency)</div>
+                        <div class="lang-level">
+                            <div class="lang-level-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-name">Arabic (Professional proficiency)</div>
+                        <div class="lang-level">
+                            <div class="lang-level-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Interests Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Personal Interests</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fab fa-osi fa-3x text-primary"></i>
+                            </div>
+                            <h4>Open Source</h4>
+                            <p>Contributing to educational technology projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-camera-retro fa-3x text-primary"></i>
+                            </div>
+                            <h4>Photography</h4>
+                            <p>Digital art and visual storytelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-chalkboard-teacher fa-3x text-primary"></i>
+                            </div>
+                            <h4>Teaching</h4>
+                            <p>Technology skills to underserved communities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-palette fa-3x text-primary"></i>
+                            </div>
+                            <h4>Digital Media</h4>
+                            <p>Exploring traditional African art in digital form</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="quote-box">
+                        <p class="fst-italic mb-0 text-center">"Technology is most powerful when it enhances human connection and understanding. My aim is to create digital experiences that educate, inspire, and transform."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Interested in working together?</h2>
+            <p class="lead mb-4">I'm currently available for select freelance projects and consulting opportunities</p>
+            <a href="#contact" class="btn btn-light btn-lg">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links mb-3">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2025 Hassan Issa Hassan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
